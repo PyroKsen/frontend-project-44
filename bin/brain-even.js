@@ -1,8 +1,10 @@
 import readlineSync from 'readline-sync';
 
+console.log('brain-even')
+
 import { hi } from '../src/cli.js';
 
-hi()
+const name = hi()
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
@@ -19,20 +21,20 @@ while (i < 3) {
         console.log('Correct!')
         i += 1
     } else if ((answer.toLowerCase() === 'yes' && number % 2 !== 0)) {
-        console.log("'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, " + 'name' + "!")
+        console.log("'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, " + name + "!")
         i = 0
         break
     } else if (answer.toLowerCase() === 'no' && number % 2 === 0) { 
-        console.log("'no' is wrong answer ;(. Correct answer was 'yes'. Let's try again, " + 'name' + "!")
+        console.log("'no' is wrong answer ;(. Correct answer was 'yes'. Let's try again, " + name + "!")
         i = 0
         break
     } else {
-        console.log("your answer is wrong ;(. Let's try again, " + 'name' + "!")
+        console.log("Your answer is wrong ;(. Let's try again, " + name + "!")
         i = 0
         break
     }
 }
 
 if (i === 3) {
-    console.log('Congratulations, ' + 'name' + '!')
+    console.log('Congratulations, ' + name + '!')
 }
