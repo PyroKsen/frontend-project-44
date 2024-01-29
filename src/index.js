@@ -1,10 +1,5 @@
 import readlineSync from 'readline-sync';
 
-import { hi } from '../src/cli.js';
-const name = hi()
+import hi from './cli.js';
 
-export const win = () => {
-    if (i === 3) {
-        console.log('Congratulations, ' + name + '!')
-    }
-}
+const name = hi();
