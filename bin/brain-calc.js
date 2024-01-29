@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-
 import hi from '../src/cli.js';
 
 console.log('brain-calc');
 const name = hi();
 console.log('What is the result of the expression?');
+
 const arrayCalc = ['-', '+', '*'];
 let i = 0;
 while (i < 3) {
