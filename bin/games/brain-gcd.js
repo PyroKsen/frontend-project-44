@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import hi from '../src/cli.js';
+import hi from '../../src/cli.js';
 
 console.log('brain-gcd');
 const name = hi();
