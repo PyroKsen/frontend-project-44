@@ -1,3 +1,10 @@
 import hi from '../src/cli.js';
 
-hi();
+const userName = hi();
+
+const welcome = () => {
+  console.log('Welcome to the Brain Games!');
+  console.log(userName);
+};
+
+export default welcome;
