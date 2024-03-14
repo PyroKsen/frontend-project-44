@@ -7,4 +7,4 @@ const welcome = () => {
   console.log(userName);
 };
 
-welcome()
+export default welcome;
