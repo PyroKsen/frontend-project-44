@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
 const hi = () => {
@@ -5,8 +6,7 @@ const hi = () => {
 
   const name = readlineSync.question('May I have your name?: ');
 
-  console.log(`Hello, ${name}`);
-
+  console.log(`Hello, ${name}!`);
   return name;
 };
 
